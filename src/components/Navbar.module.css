@@ -1,0 +1,121 @@
+.container{
+    height:100px;
+}
+
+.inner{
+    max-width: 1500px;
+    display: flex;
+    margin: 0 auto;
+    justify-content: space-between;
+    font-family: 'THICCCBOI';
+    font-size:.8rem;
+    height: 100%;
+    align-items: center;
+
+}
+
+.inner img{
+    object-fit: contain;
+    height: 100px;
+    width: 100px;
+}
+
+.middleNav{
+    display: flex;
+    justify-content: space-between;
+}
+
+.middleNav p{
+    margin-left: 10px;
+    margin-right: 10px;
+    cursor: pointer;
+}
+.middleNav p:hover{
+    color: #596AFF;
+}
+.leftNav{
+    display: flex;
+    align-items: center;
+}
+
+.leftNav p{
+    margin-left: 10px;
+    margin-right: 10px;
+}
+
+.leftNav button{
+    font-family: 'THICCCBOI';
+    background-color: #5F51C2;
+    color:white;
+    border: none;
+    border-radius: 20px;
+    padding: 5px;
+    padding-right: 15px;
+    padding-left: 15px;
+    display: flex;
+    align-items: center;
+    transition: all 0.3s;
+    cursor: pointer;
+}
+
+.leftNav button:hover{
+    background-color: #27205b;
+}
+
+.features{
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    
+}
+
+.featuresOptions{
+    height: fit-content;
+    width: 150px;
+    position: absolute;
+    box-shadow: 4px 3px 15px 4px lightgray;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    border-radius: 5px;
+    margin: 0 auto;
+    top: 15px;
+    background-color: white;
+    z-index: 100;
+}
+
+.featuresOptions p{
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+.featuresOptions p:hover{
+    color:#596AFF;
+    font-weight: 1000;
+    cursor: pointer;
+}
+
+.openNav{
+    display: none;
+}
+
+@media screen and (max-width:600px) {
+    .leftNav,.middleNav{
+        display:none;
+    }
+    .inner{
+        max-width: 90vw;
+    }
+
+    .openNav{
+        display: block;
+    }
+}
+
+@media screen and (max-width:1600px) {
+    .inner{
+        padding-left: 30px;
+        padding-right: 30px;
+    }
+}
