@@ -3,11 +3,9 @@
 }
 
 .inner{
-    max-width: 1200px;
     margin:  auto;
     font-family: THICCCBOI;
 }
-
 
 .sectionOne h2{
     font-family: THICCCBOI BOLD;
@@ -31,6 +29,9 @@
     justify-content: space-around;
     height: 200px;
     margin-top: 50px;
+    width:70%;
+    margin: 0 auto;
+    margin-top: 50px;
 }
 
 .sectionOne .cards div{
@@ -40,6 +41,15 @@
     text-align: start;
     padding: 20px;
     background-color: white;
+    transition: all 0.3s;
+}
+
+.sectionOne .cards div:hover{
+    transform: scale(1.1);
+}
+
+.sectionOne .cards div p{
+    color:#C5C5C5;
 }
 
 .sectionOne .cards div h4{
@@ -48,13 +58,11 @@
 }
 
 .sectionTwo{
-    max-width: 1200px;
     margin: 0 auto;
     margin-top: 100px;
     display: flex;
     flex-direction: column;
 }
-
 
 .sectionTwo .heading{
     background-color:#F3F5FF;
@@ -64,13 +72,15 @@
     color:#5335D9;
     align-self: flex-start;
     margin-bottom: 50px;
+    margin-left: 15vw;
 }
 
 .sectionTwo .subHeading{
     display: flex;
-    width: 100%;
+    margin: 0 auto;
     justify-content: space-between;
     align-items: center;
+    width: 70vw;
 }
 
 .sectionTwo .subHeading h2{
@@ -89,21 +99,37 @@
 
 .swiperContainer{
     margin-top: 100px;
-    height: 400px;
+    height: 440px;
     background-image: url('../../public/backgroundslideblue.png');
     background-position: center;
     background-repeat: no-repeat;
-    background-size: contain;
+    background-size: cover;
+    /* width:90vw; */
+    max-width:1200px;
+    margin: 0 auto;
+    border-radius:50px;
 }
 
 .slideContainer{
-    width:250px;
-    height:250px;
-    box-shadow: 0px 4px 5px 4px lightgray;
+    /* border: 1px solid red; */
+    margin-top: 50px;
+    width:100px;
+    height:300px;
     padding: 20px;
     border-radius: 20px;
     text-align: start;
-   background-color: white;
+    background-color: white;
+   transition: all .3s;
+   z-index: 100000;
+}
+
+.slideContainer:hover{
+    transform: scale(1.1);
+}
+
+.slideContent{
+    color: #7A7D9C;
+    margin-top: -10px;
 }
 
 .slideTop{
@@ -117,7 +143,8 @@
 
 .slideTop h4{
     font-family: THICCCBOI BOLD;
-    font-size: 1.2rem;
+    font-size: 1rem;
+    text-align: center;
 }
 
 .slideTop img{
@@ -127,9 +154,7 @@
     object-fit: contain;
 }
 
-
-
-.slideTop h4, .slideTop p{
+.slideTop p{
     text-align: start;
 }
 
@@ -138,7 +163,21 @@
 }
 
 
+@media screen and (max-width:1450px) {
+    .sectionTwo .subHeading{
+        padding-left: 80px;
+        padding-right: 80px;   
+    }
+}
+@media screen and (max-width:1300px) {
+    .sectionTwo .subHeading{
+        padding-left: 50px;
+        padding-right: 50px;
+    }
+}
+
 @media screen and (max-width:600px) {
+    
     .inner{
         max-width: 90vw;
     }

@@ -92,10 +92,13 @@ const SignUp = () => {
                 <div
                 className={styles.agree}
                 >
+                    <div className={styles.checkLine}>
                     <input
                     type='checkbox'
                     />
                     <span>By clicking here, I state that I have read and understood the terms and conditions</span>
+                    </div>
+                    
                     
                     <button>
                         Sign Up
